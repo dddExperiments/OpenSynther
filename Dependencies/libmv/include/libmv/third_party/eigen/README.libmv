@@ -1,0 +1,16 @@
+Project: Eigen
+URL: http://eigen.tuxfamily.org/
+License: LGPL3 or GPL2
+Upstream version: 2.0.3, released June 21, 2009
+
+Local modifications:
+
+  * Add NumTraits for "unsigned long"; used in our SURF implementation.
+  * Fixed a minor assert bug in Map.h.
+  * Fixed an "unused variable" warning in SVD.h.
+  * Fixed another "unused variable" warning in SVD.h, in release mode.
+  * Added missing placement operator delete to match placement new.
+
+Note: Only the license and Eigen/ directory is included.
+Note: For now, the CMake build system for Eigen is not included because we only
+need the headers; until we need our own sparse bundler it can stay out.

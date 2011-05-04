@@ -1,0 +1,15 @@
+Project: StarDetector
+URL: http://sourceforge.net/projects/opencvlibrary/
+License: BSD
+Upstream version: 2.0, released 2009-10-01
+
+Local modifications:
+* change name from cvstardetector.cpp to cvStarDetector.h
+
+* Code changes :
+* Remove dependancies over Opencv
+* Change to fit the libmv bases classes
+* Make function template and use default parameter
+* Minor memory optimization
+* Fix crash issue with very small image
+

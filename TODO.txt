@@ -1,0 +1,9 @@
+
+OpenSynther TODO:
+-----------------
+
+- Histogram img export [done]
+- Tracks length histogram export [done]
+- Add color to tracks [done]
+- Implement RobustNViewTriangulation [done]
+- Try to look point cloud generated with sfmtoolkit viewer -> check if bundler camera output is ok [done]

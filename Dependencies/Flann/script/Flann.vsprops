@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Flann"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(Flann)\include"
+		PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="flann.lib"
+		AdditionalLibraryDirectories="$(Flann)\lib\$(PlatformName)"
+	/>
+	<UserMacro
+		Name="Flann"
+		Value="$(SolutionDir)\Dependencies\Flann"
+	/>
+</VisualStudioPropertySheet>

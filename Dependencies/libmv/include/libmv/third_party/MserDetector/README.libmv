@@ -1,0 +1,17 @@
+Project: MserDetector
+URL: https://code.ros.org/svn/opencv/trunk/opencv/modules/features2d/
+License: BSD
+Upstream version: Revision 3399, Trunk 25 July 2010
+
+Local modifications:
+* change name from mser.cpp to cvMserDetector.h
+
+* Code changes :
+* Remove dependancies over Opencv
+* Change to fit the libmv bases classes
+* Make function template and use default parameter
+* Code factoring of icvMSERMergeComp
+* Add function to draw mser pixels and fitted ellipses
+* Remove code to extract color mser
+* Simplify the code :
+*  - While merging the component stack we could not create a new component.

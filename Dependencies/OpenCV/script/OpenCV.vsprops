@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="OpenCV"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(OpenCV)\include"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="opencv_core220.lib opencv_highgui220.lib opencv_imgproc220.lib opencv_flann220.lib opencv_features2d220.lib opencv_calib3d220.lib"
+		AdditionalLibraryDirectories="$(OpenCV)\lib\$(PlatformName)"
+	/>
+	<UserMacro
+		Name="OpenCV"
+		Value="$(SolutionDir)\Dependencies\OpenCV"
+	/>
+</VisualStudioPropertySheet>

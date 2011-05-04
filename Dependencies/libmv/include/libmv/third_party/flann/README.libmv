@@ -1,0 +1,14 @@
+Project: FLANN
+URL: http://people.cs.ubc.ca/~mariusm/index.php/FLANN/FLANN
+License: BSD
+Upstream version: 1.2 released February 2009
+Doc : http://people.cs.ubc.ca/~mariusm/uploads/FLANN/manual.pdf
+
+Local modifications:
+* Remove matlab and python from CMAKE native build system.
+
+* Code changes :
+* Add CMake Build system
+* Fix warnings and errors at compilation time
+* Change FLANNParameters::char* log_destination to FLANNParameters::const char* log_destination
+* Remove the macro to export function as DLL. We use flann as a static library.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="libmv"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(libmv)\include\libmv&quot;;&quot;$(libmv)\include\libmv\third_party\eigen&quot;;&quot;$(libmv)\include\libmv\third_party\glog\src&quot;"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="multiview.lib reconstruction.lib numeric.lib glog.lib gflags.lib pthread.lib"
+		AdditionalLibraryDirectories="$(libmv)\lib"
+	/>
+	<UserMacro
+		Name="libmv"
+		Value="$(SolutionDir)\Dependencies\libmv"
+	/>
+</VisualStudioPropertySheet>
